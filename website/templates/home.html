@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="home-img-container">
+    <img src="{{ url_for('static', filename='/styles/home-img.png')}}" class="home-img"/>
+</div>
+
+<div class="home-txt-container">
+    <h2 align="center" class="task-title">Bem-vindo à Lista de Tarefas</h2>
+    <p align="center">Um app web que te ajuda a organizar tuas tarefas.</p>
+</div>
+
+<div id="home-form-container">
+    <form class="home-form" method="POST">
+        <input type="text" class="task-input" name="task" placeholder="   Digite o nome de sua tarefa aqui."/>
+        <button class="home-form-btn"type="submit"><i class="airplane fas fa-paper-plane"></i></button>
+    </form>
+</div>
+
+<div>
+    <h2 align="center" class="task-title">Tarefas</h2>
+</div>
+
+<div class="task-container">
+    <ul class="list-group list-group-flush" id="tasks">
+        {% for task in user.tasks %}
+        <li class="task-item">{{ task.text }}<button type="button" class="close close-task-btn" onClick="deleteTask({{ task.id }})"><i class="fas fa-times"></i></button></li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

@@ -1,0 +1,180 @@
+/*----Estilos Globais----*/
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #274060;
+}
+ul{
+    list-style: none;
+}
+
+
+/*----Menu nav----*/
+.nav-title{
+    padding: 10px 0 10px 0;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    text-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+a{ 
+    padding: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+}
+.a-title{
+    font-weight: 900;
+    font-size: 30px;
+    color: white;
+}
+.navbar-style{
+    background: linear-gradient(to right, #4C83FF,  #2AFADF);
+}
+
+
+
+/*----Formulários----*/
+form h2{
+    margin-top: 50px;
+    font-weight: 900;
+}
+.sign-up-form{
+    margin: 60px 350px 100px 350px;
+    border-radius: 10px;
+    padding: 50px 100px 100px 100px;
+    background-color: white;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+}
+.login-form{
+    margin: 60px 350px 100px 350px;
+    border-radius: 10px;
+    padding: 50px 100px 100px 100px;
+    background-color: white;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+}
+.form-group{
+    padding-top: 10px;
+}
+.form-button{
+    font-size: 17px;
+    font-weight: 900;
+    width: 100%;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 15px;
+    font-weight: bold;
+    background: linear-gradient(to right, #4C83FF 0%,  #2AFADF 100%);
+    box-shadow: 0 15px 30px rgba(39,64,96,0.3);
+    text-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+.form-button:hover{
+    transition: ease-in-out 0.2s;
+    transform: scale(1.1)
+}
+
+
+
+
+/*----Home----*/
+.home-img-container{
+    margin-top: 30px;
+    padding-left: 380px;
+    width: 90%;
+    height: 300px;
+}
+.home-img{
+    display:flex;
+    align-self: center;
+    justify-self: center;
+    width: 600px;
+    height: 300px;
+}
+.task-title{
+    margin-bottom: 20px;
+    margin-top: 50px;
+    font-weight: 900;
+    font-size: 40px;
+}
+.home-form{
+    display: grid;
+    grid-template-columns: 92% 8%;
+    margin: 20px 100px 20px 100px;
+    padding: 15px 50px 20px 50px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+.task-input{
+    padding: 1px;
+    margin-bottom: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 1px;
+    border-color: #4C83FF;
+}
+.home-form-btn{
+    border: none;
+    margin: 0 0 0 10px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #4C83FF 0%, #2AFADF 100%);
+    color: white;
+    text-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 20px rgba(76,132,255,0.4);
+    padding: 20px 5px 20px 5px;
+}
+.home-form-btn:hover{
+    transition: ease-in-out 0.2s;
+    transform: scale(1.1)
+}
+.airplane{
+    color: white;
+}
+.task-item{
+    padding: 30px;
+    margin: 20px 50px 0 50px;
+    background-color: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+.close-btn{
+    border: none;
+    margin: 0 0 0 10px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #4C83FF 0%, #2AFADF 100%);
+    color: white;
+    text-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 20px rgba(76,132,255,0.4);
+    padding: 20px 5px 20px 5px;
+}
+
+
+/*----Footer----*/
+#footer{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding: 25px;
+    background-color: #274060;
+}
+#footer h3{
+    color: white;
+    font-weight: 300;
+    font-size: 15px;
+}
+#footer i{
+    padding-left: 10px;
+    color: #e2504c;
+}
+
+
+/*----Media Querys----*/
+@media(max-width: 1100px){
+    .login-form{
+        margin: 40px;
+        padding: 10px 50px 70px 50px;
+    }
+    .sign-up-form{
+        margin: 40px;
+        padding: 10px 50px 70px 50px;
+    }
+}

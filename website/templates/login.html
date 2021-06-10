@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Iniciar Sessão{% endblock %}
+
+{% block content %}
+<form class="login-form" method="POST">
+    <h2 align="center">INICIAR SESSÃO</h2>
+
+    <div class="form-group">
+        <label for="email">E-mail</label>
+        <input class="form-control" type="email" name="email" id="email" placeholder="Insira seu e-mail"/>
+    </div>
+
+    <div class="form-group">
+        <label for="password">Senha</label>
+        <input class="form-control" type="password" name="password", id="password" placeholder="Insira sua senha"/>
+    </div>
+
+    <button type="submit" class="form-button">ENTRAR</button>
+</form>
+{% endblock %}
