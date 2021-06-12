@@ -18,12 +18,21 @@
             <h1 class="nav-title" align="left">Agenda Web</h1>
                 <div class='d-inline-block' id='navbar'>
                     {% if user.is_authenticated %}
-                    <a class='nav-item nav-link a-link' id='home' href='/'>Home</a>
-                    <a class='nav-item nav-link a-link' id='logout' href='/logout'>Sair</a>
-                    {% else %}
-                    <a class="nav-item dropdown"><i class="fas fa-user"></i></a>
-                    <a class='nav-item nav-link a-link' id='login' href='/login'>Login</a>
-                    <a class='nav-item nav-link a-link' id='sign-up' href='/sign-up'>Cadastro</a>
+                    <div>     
+                    <ul class="settings">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle options-link" href="#" id="dropdown-menu-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user user-i"></i></a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-menu-link">
+                                <a class='nav-item nav-link dropdown-item' id='home' href='/'>Home</a>
+                                <a class='nav-item nav-link dropdown-item' id='logout' href='/logout'>Sair</a>
+                            </div>
+                        </li>
+                    </ul>
+                    </div>
+                        {% else %}
+                        <a class='a-link' id='login' href='/login'>Login</a>
+                        <a class='a-link' id='sign-up' href='/sign-up'>Cadastro</a>
+                    </li>
                     {% endif %}
                 </div>
             </div>
